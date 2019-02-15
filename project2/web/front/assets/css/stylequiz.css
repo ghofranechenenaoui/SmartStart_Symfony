@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+
+
+html, body {
+  background: #ffffff;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  display: table;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#quiz {
+  position: relative;
+  width: 1000px;
+  height:200px;
+  top:0px;
+
+}
+
+#quiz h1 {
+  color: #000000;
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 44px;
+}
+
+#quiz button {
+  float: right;
+  margin: 8px 0px 0px 8px;
+  padding: 4px 8px;
+  background:  #002266;
+  color: #FFF;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+#quiz button:hover {
+  background: #36a39c;
+  color: #FFF;
+}
+
+#quiz button:disabled {
+  opacity: 0.5;
+  background: #000033;
+  color: #fff;
+  cursor: default;
+}
+
+#question {
+  padding: 20px;
+  background: #FAFAFA;
+}
+
+#question h2 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#question input[type=radio] {
+  display: none;
+}
+
+#question label {
+  display: inline-block;
+  margin: 4px;
+  padding: 8px;
+  background: #FAE3BB;
+  color: #4C3000;
+  width: calc(50% - 8px);
+  min-width: 100px;
+  cursor: pointer;
+}
+
+#question label:hover {
+  background: #ff9900;
+}
+
+#question input[type=radio]:checked + label {
+  background: #ff9900;
+  color: #FAFAFA;
+}
+
+#quiz-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  background: #FAFAFA;
+  width: 100%;
+  height: calc(100% - 44px);
+}
+
+#quiz-results-message {
+  display: block;
+  color: #00403C;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#quiz-results-score {
+  display: block;
+  color: #31706c;
+  font-size: 20px;
+}
+
+#quiz-results-score b {
+  color: #00403C;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+.progress {
+  width: 980px;
+  height: 25px;
+  left:160px;
+
+}
+
+.progress-wrap {
+  background: green;
+  margin: 20px 10;
+  overflow: hidden;
+  position: relative;
+  
+  border: 1px solid #9ACFCC;
+  border-radius: 4px;
+
+}
+.progress-wrap .progress-bar {
+  background:  #9ACFCC;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+  
+.item{
+  position:absolute;
+  top:2px;
+  left:0px;
+  color:#000;
+  font-size:14px;
+}

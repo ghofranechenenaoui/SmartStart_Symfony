@@ -1,0 +1,3 @@
+event:
+    path:     /event
+    defaults: { _controller: EventBundle:event:event }

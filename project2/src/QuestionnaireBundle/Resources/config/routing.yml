@@ -1,0 +1,7 @@
+questionnaire_homepage:
+    path:     /test2
+    defaults: { _controller: QuestionnaireBundle:Default:index }
+
+questionnaire:
+    path:     /questionnaire
+    defaults: { _controller: QuestionnaireBundle:questionnaire:questionnaire }

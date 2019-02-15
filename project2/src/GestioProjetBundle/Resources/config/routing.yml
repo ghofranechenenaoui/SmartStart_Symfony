@@ -1,0 +1,7 @@
+gestio_projet_homepage:
+    path:     /
+    defaults: { _controller: GestioProjetBundle:Default:index }
+
+gestioprojet:
+    path:     /gestioprojet
+    defaults: { _controller: GestioProjetBundle:gestioprojet:gestioprojet }

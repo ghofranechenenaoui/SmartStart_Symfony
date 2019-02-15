@@ -1,0 +1,3 @@
+vitrine:
+    path:     /vitrine
+    defaults: { _controller: VitrineBundle:vitrine:vitrine }

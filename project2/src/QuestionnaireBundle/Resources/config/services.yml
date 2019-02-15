@@ -1,0 +1,4 @@
+services:
+#    questionnaire.example:
+#        class: QuestionnaireBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

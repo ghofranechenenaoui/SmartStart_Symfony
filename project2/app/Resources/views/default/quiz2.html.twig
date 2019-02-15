@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page Title -->
+    <title>Quiz</title>
+
+    <!-- Favicon -->
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <link rel="shortcut icon" href="{{ asset('front/assets/images/logo/favicon.png')}}" type="image/x-icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{{ asset('front/assets/css/animate-3.7.0.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/assets/css/font-awesome-4.7.0.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/assets/fonts/flat-icon/flaticon.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/assets/css/bootstrap-4.1.3.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/assets/css/owl-carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/assets/css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/assets/css/stylequiz.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/assets/css/logout.css')}}">
+
+</head>
+<body>
+<!-- Preloader Starts -->
+<div class="preloader">
+    <div class="spinner"></div>
+</div>
+<!-- Preloader End -->
+
+
+<!-- Header Area Starts -->
+<header>
+    <div class="blog-top">
+        <div class="top_menu row m-0">
+            <div class="container">
+                <div class="float-left">
+                    <ul class="list header_social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="header-area blog-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo-area">
+                        <a href="index.html"><img src="{{ asset('front/assets/images/logo.png')}}" alt="logo" style="width:150px;height:90px;border:0;"></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="custom-navbar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="main-menu">
+                        <ul>
+                            <li><a href="#">Chercher un Job</a>
+                            </li>
+                            <li><a href="#">Vétrine d'ART</a></li>
+                            <li><a href="#">Quiz</a></li>
+                            <li><a href="#">Événement</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Créer Événement</a></li>
+                                    <li><a href="#">Consulter Événement</a></li>
+                                </ul>
+
+                            </li>
+
+                            <li><a href="#">Forum</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Forum Home</a></li>
+                                    <li><a href="#">Forum Details</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+
+                                <a class="button22" href="#">
+                                    <img src="https://pbs.twimg.com/profile_images/378800000639740507/fc0aaad744734cd1dbc8aeb3d51f8729_400x400.jpeg">
+                                    <div class="logout">LOGOUT</div>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Area End -->
+
+
+
+
+<!-- Start blog-posts Area -->
+<section class="blog-posts-area section-padding">
+    <center>
+        <div id="quiz" style="top:0px;" >
+            <h1 id="quiz-name"></h1>
+            <button id="submit-button">Submit Answers</button>
+            <button id="next-question-button">Next Question</button>
+            <button id="prev-question-button">Previous</button>
+
+            <div id="quiz-results">
+                <p id="quiz-results-message"></p>
+                <p id="quiz-results-score"></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </center>
+    <div class="progress-wrap progress" data-progress-percent="100">
+        <div class="progress-bar progress"></div>
+        <label class="item" ></label>
+    </div>
+
+
+</section>
+
+
+
+<!-- Footer Area Starts -->
+<footer class="footer-area section-padding">
+    <div class="footer-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3">
+                    <div class="single-widget-home mb-5 mb-lg-0">
+                        <h3 class="mb-4">Communauté</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Événements</a></li>
+                            <p><li class="mb-2"><a href="#">Forum</a></li></p>
+                            <li class="mb-2"><a href="#">Invite un ami</a></li>
+                            <p><li class="mb-2"><a href="#">Être inspiré</a></li></p>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="single-widget-home mb-5 mb-lg-0">
+                        <h3 class="mb-4">newsletter</h3>
+                        <p class="mb-4">Vous pouvez nous faire confiance. nous envoyons seulement des offres
+                            promotionnelles, pas une seule.</p>
+                        <form action="#">
+                            <input type="email" placeholder="Your email here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email here'" required>
+                            <button type="submit" class="template-btn">Abonnez Vous </button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+                <div class="col-xl-2 col-lg-3">
+                    <div class="single-widget-home mb-5 mb-lg-0">
+                        <h3 class="mb-4">Support</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Help & Support</a></li>
+                            <p><li class="mb-2"><a href="#">Confiance et sécurité</a></li></p>
+                            <p><li class="mb-2"><a href="#">Vendre </a></li></p>
+                            <li class="mb-2"><a href="#">Acheter </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6"></div>
+                <div class="col-lg-4 col-md-6" >
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Area End -->
+<script>
+    moveProgressBar();
+
+    function moveProgressBar(){
+        var getPercent = ($('.progress-wrap').data('progress-percent') / 100),
+            getProgressWrapWidth = $('.progress-wrap').width(),
+            progressTotal = getPercent * getProgressWrapWidth,
+            animationLength = converte("00:08:30");
+
+        $('.progress-bar').stop().animate({
+            left: progressTotal
+        }, animationLength);
+    }
+
+    function converte(time){
+        var time = time.split(":");
+
+        var s = (time[2] * 1000),
+            m = ((time[1] * 1000) * 60),
+            h = ((time[0] * 60000) * 60);
+
+        return (h+m+s);
+    }
+
+
+    var evento  = new Date('2016-06-02 11:10:00'),
+        atual   = new Date('2016-06-02 11:00:00'),
+        duracao = moment.duration(evento - atual, 'milliseconds');
+
+    updateChronometer(duracao);
+
+    function updateChronometer(duracao){
+        setInterval(function(){
+            duracao = moment.duration(duracao - 1000, 'milliseconds');
+            if(duracao>=0){
+                if(duracao.days()==0){
+                    $(".item").text(completeZeroToLeft(duracao.hours()) + ":" + completeZeroToLeft(duracao.minutes()) + ":" + completeZeroToLeft(duracao.seconds()));
+                }else{
+                    $(".item").text(duracao.days() + "d " + completeZeroToLeft(duracao.hours()) + ":" + completeZeroToLeft(duracao.minutes()) + ":" + completeZeroToLeft(duracao.seconds()));
+                }
+            }
+        }, 1000);
+    }
+
+    function completeZeroToLeft(number){
+        return ( number < 10 ? "0" + number : number );
+    }
+</script>
+
+
+<!-- Javascript -->
+<script src="{{ asset('front/assets/js/vendor/jquery-2.2.4.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/bootstrap-4.1.3.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/wow.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/owl-carousel.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/jquery.nice-select.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/ion.rangeSlider.js')}}"></script>
+<script src="{{ asset('front/assets/js/main.js')}}"></script>
+<script  src="{{ asset('front/assets/js/indexquiz.js')}}"></script>
+
+</body>
+</html>

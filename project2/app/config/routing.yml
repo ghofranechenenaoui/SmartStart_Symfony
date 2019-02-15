@@ -1,0 +1,35 @@
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+event:
+    resource: "@EventBundle/Resources/config/routing.yml"
+    prefix:   /event
+
+gestio_projet:
+    resource: "@GestioProjetBundle/Resources/config/routing.yml"
+    prefix:   /gestioprojet
+
+questionnaire:
+    resource: "@QuestionnaireBundle/Resources/config/routing.yml"
+    prefix:   /questionnaire
+
+forum:
+    resource: "@ForumBundle/Resources/config/routing.yml"
+    prefix:   /forum
+
+vitrine:
+    resource: "@VitrineBundle/Resources/config/routing.yml"
+    prefix:   /vitrine
+
+portfolio:
+    resource: "@PortfolioBundle/Resources/config/routing.yml"
+    prefix:   /portfolio
+
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

@@ -1,0 +1,11 @@
+portfolio_competence:
+    resource: "@PortfolioBundle/Resources/config/routing/competence.php"
+    prefix:   /competence
+
+portfolio_homepage:
+    path:     /test
+    defaults: { _controller: PortfolioBundle:Default:index }
+
+portfolio:
+    path:     /portfolio
+    defaults: { _controller: PortfolioBundle:portfolio:portfolio }

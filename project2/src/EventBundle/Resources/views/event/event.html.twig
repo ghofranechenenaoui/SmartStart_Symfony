@@ -1,0 +1,32 @@
+{% extends 'baseaymen.html.twig' %}
+{% block content %}
+{% block title %}<title>Evenememt</title>
+{% endblock %}
+
+    <link rel='stylesheet' href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.6/fullcalendar.min.css')}}">
+    <link rel='stylesheet' href="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')}}">
+
+    <div id='wrap'>
+
+
+        <div id='calendar'></div>
+
+        <div style='clear:both'></div>
+
+    </div>
+
+    <link rel="stylesheet" href="{{ asset('front/assets/css/style.css')}}">
+
+    <script src="{{ asset('https://code.jquery.com/jquery-1.11.2.min.js') }}"></script>
+    <script src="{{ asset('https://code.jquery.com/ui/1.11.2/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js') }}"></script>
+    <script src="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.6/fullcalendar.min.js') }}"></script>
+
+
+
+    <script  src="{{ asset('front/assets/js/index.js') }}"></script>
+
+
+
+{% endblock %}
