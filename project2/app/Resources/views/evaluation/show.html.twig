@@ -1,0 +1,29 @@
+
+{% block body %}
+    <h1>Evaluation</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ evaluation.id }}</td>
+            </tr>
+            <tr>
+                <th>Libelle</th>
+                <td>{{ evaluation.libelle }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

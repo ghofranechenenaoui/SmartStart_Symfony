@@ -1,0 +1,40 @@
+niveau_index:
+    path:     /index
+    defaults: { _controller: "QuestionnaireBundle:Niveau:new" }
+    methods:  [GET, POST]
+
+niveau_show:
+    path:     /{id}/show
+    defaults: { _controller: "QuestionnaireBundle:Niveau:show" }
+    methods:  [GET, POST]
+
+niveau_new:
+    path:     /new
+    defaults: { _controller: "QuestionnaireBundle:Niveau:new" }
+    methods:  [GET, POST]
+
+niveau_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "QuestionnaireBundle:Niveau:edit" }
+    methods:  [GET, POST]
+
+niveau_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "QuestionnaireBundle:Niveau:delete" }
+    methods:  DELETE
+
+niveau_delete2:
+    path:     /{id}/delete2
+    defaults: { _controller: "QuestionnaireBundle:Niveau:delete2" }
+    methods:  [GET, POST]
+
+niveau_imprimer:
+    path:     /pfd
+    defaults: { _controller: "QuestionnaireBundle:Niveau:imprimer" }
+    methods:  [GET, POST]
+
+
+niveau_imprimer2:
+    path:     /pagination
+    defaults: { _controller: "QuestionnaireBundle:Niveau:list" }
+    methods:  [GET, POST]

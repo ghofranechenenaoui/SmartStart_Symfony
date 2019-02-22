@@ -10,4 +10,10 @@ namespace QuestionnaireBundle\Repository;
  */
 class CategorieQuizRepository extends \Doctrine\ORM\EntityRepository
 {
+
+
+
+
+
+
 }

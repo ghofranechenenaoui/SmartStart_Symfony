@@ -1,0 +1,93 @@
+{% extends 'baseaymen.html.twig' %}
+{% block cc %}
+
+<!-- Start blog-posts Area -->
+<section class="blog-posts-area section-padding">
+    <center>
+        <div id="quiz" style="top:0px;" >
+            <h1 id="quiz-name"></h1>
+            <button id="submit-button">Submit Answers</button>
+            <button id="next-question-button">Next Question</button>
+            <button id="prev-question-button">Previous</button>
+
+            <div id="quiz-results">
+                <p id="quiz-results-message"></p>
+                <p id="quiz-results-score"></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </center>
+    <div class="progress-wrap progress" data-progress-percent="100">
+        <div class="progress-bar progress"></div>
+        <label class="item" ></label>
+    </div>
+
+
+</section>
+
+
+<script>
+    moveProgressBar();
+
+    function moveProgressBar(){
+        var getPercent = ($('.progress-wrap').data('progress-percent') / 100),
+            getProgressWrapWidth = $('.progress-wrap').width(),
+            progressTotal = getPercent * getProgressWrapWidth,
+            animationLength = converte("00:08:30");
+
+        $('.progress-bar').stop().animate({
+            left: progressTotal
+        }, animationLength);
+    }
+
+    function converte(time){
+        var time = time.split(":");
+
+        var s = (time[2] * 1000),
+            m = ((time[1] * 1000) * 60),
+            h = ((time[0] * 60000) * 60);
+
+        return (h+m+s);
+    }
+
+
+    var evento  = new Date('2016-06-02 11:10:00'),
+        atual   = new Date('2016-06-02 11:00:00'),
+        duracao = moment.duration(evento - atual, 'milliseconds');
+
+    updateChronometer(duracao);
+
+    function updateChronometer(duracao){
+        setInterval(function(){
+            duracao = moment.duration(duracao - 1000, 'milliseconds');
+            if(duracao>=0){
+                if(duracao.days()==0){
+                    $(".item").text(completeZeroToLeft(duracao.hours()) + ":" + completeZeroToLeft(duracao.minutes()) + ":" + completeZeroToLeft(duracao.seconds()));
+                }else{
+                    $(".item").text(duracao.days() + "d " + completeZeroToLeft(duracao.hours()) + ":" + completeZeroToLeft(duracao.minutes()) + ":" + completeZeroToLeft(duracao.seconds()));
+                }
+            }
+        }, 1000);
+    }
+
+    function completeZeroToLeft(number){
+        return ( number < 10 ? "0" + number : number );
+    }
+</script>
+
+
+<!-- Javascript -->
+<script src="{{ asset('front/assets/js/vendor/jquery-2.2.4.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/bootstrap-4.1.3.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/wow.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/owl-carousel.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/jquery.nice-select.min.js')}}"></script>
+<script src="{{ asset('front/assets/js/vendor/ion.rangeSlider.js')}}"></script>
+<script src="{{ asset('front/assets/js/main.js')}}"></script>
+<script  src="{{ asset('front/assets/js/indexquiz.js')}}"></script>
+
+</body>
+{% endblock %}

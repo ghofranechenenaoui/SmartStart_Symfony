@@ -1,0 +1,34 @@
+evaluation_index:
+    path:     /index
+    defaults: { _controller: "QuestionnaireBundle:Evaluation:new" }
+    methods:  GET
+
+evaluation_show:
+    path:     /{id}/show
+    defaults: { _controller: "QuestionnaireBundle:Evaluation:show" }
+    methods:  [GET, POST]
+
+evaluation_show2:
+    path:     /{id}/show2
+    defaults: { _controller: "QuestionnaireBundle:Evaluation:show2" }
+    methods:  [GET, POST]
+
+evaluation_new:
+    path:     /new
+    defaults: { _controller: "QuestionnaireBundle:Evaluation:new" }
+    methods:  [GET, POST]
+
+evaluation_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "QuestionnaireBundle:Evaluation:edit" }
+    methods:  [GET, POST]
+
+evaluation_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "QuestionnaireBundle:Evaluation:delete" }
+    methods:  DELETE
+
+evaluation_findpaye2:
+    path:     /findpaye
+    defaults: { _controller: "QuestionnaireBundle:Evaluation:new" }
+    methods:  [GET, POST]

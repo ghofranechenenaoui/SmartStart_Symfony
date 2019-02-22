@@ -1,0 +1,116 @@
+{% extends 'baseback.html.twig' %}
+{% block content4 %}
+
+    <main class="app-content">
+        <div class="app-title">
+            <div>
+                <h1><i class="fa fa-edit"></i> Ajouter un question</h1>
+                <p>Sample forms</p>
+            </div>
+            <ul class="app-breadcrumb breadcrumb">
+                <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+            </ul>
+        </div>
+    <div class="col-md-6" >
+        <div class="tile" style="width: 150%">
+            <div class="tile-body" style="width: 50%">
+
+                <table align="center">
+                                <tr >
+                                    {{ form_start(form) }}
+
+                                    <td>Niveau</td>
+                                    <td class="exampleSelect2 form-group form-control" style="width: 200%">
+                                        {{ form_widget(form.Niveau) }}
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr><td></td></tr>
+                                <tr>
+                                    <td>Nom du test</td>
+                                    <td class="form-control" style="width: 200%">
+                                        {{ form_widget(form.Evaluation) }}
+                                    </td>
+                                    <td></td>
+
+                                </tr>
+                                <tr><td></td></tr>
+
+                                <tr>
+                                    <td>Question</td>
+                                    <td  class="form-control" style="width: 200%">
+                                        {{ form_widget(form.description) }}
+                                    </td>
+                                    <td></td>
+
+                                </tr>
+                                <tr><td></td></tr>
+
+                                <tr>
+                                    <td>Reponse correct</td>
+                                    <td class="form-control" style="width: 200%">
+                                        {{ form_widget(form.correctReq) }}
+                                    </td>
+                                    <td></td>
+
+                                </tr>
+                                <tr><td></td></tr>
+
+                                <tr>
+                                    <td>Reponse 1</td>
+                                    <td class="form-control" style="width: 200%">
+                                        {{ form_widget(form.rep1) }}</td>
+                                    <td></td>
+
+                                </tr>
+                                <tr><td></td></tr>
+
+                                <tr>
+                                    <td>Reponse 2</td>
+                                    <td class="form-control" style="width: 200%">
+                                        {{ form_widget(form.rep2) }}
+                        </td>
+                        <td></td>
+
+                    </tr>
+                    <tr><td></td></tr>
+
+                    <tr>
+                        <td >
+                            Reponse 3
+                        </td>
+                        <td class="form-control" style="width: 200%">
+                            {{ form_widget(form.rep3) }}
+                        </td>
+                        <td></td>
+
+                    </tr>
+                    <tr><td></td></tr>
+
+                    <tr>
+                        <td >Reponse 4</td>
+                        <td class="form-control" style="width: 200%">
+                            {{ form_widget(form.rep4) }}
+                        </td>
+                        <td></td>
+
+                    </tr>
+                    <tr><td>            <div class="tile-footer">
+
+                                <input type="submit" class="btn btn-primary" value="Ajouter" /></div>
+
+                            {{ form_end(form) }}
+                        </td></tr>
+
+
+                </table>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    </main>
+{% endblock %}

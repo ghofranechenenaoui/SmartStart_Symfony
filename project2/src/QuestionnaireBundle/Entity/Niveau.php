@@ -24,9 +24,9 @@ class Niveau
     /**
      * @var int
      *
-     * @ORM\Column(name="Durée", type="integer")
+     * @ORM\Column(name="temps", type="integer")
      */
-    private $durée;
+    private $temps;
 
     /**
      * @var int
@@ -36,9 +36,9 @@ class Niveau
     private $score;
 
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="rangeLevel", type="integer")
+     * @ORM\Column(name="rangeLevel", type="string", length=255)
      */
     private $rangeLevel;
 
@@ -54,27 +54,27 @@ class Niveau
     }
 
     /**
-     * Set durée
+     * Set temps
      *
-     * @param integer $durée
+     * @param integer $temps
      *
      * @return Niveau
      */
-    public function setDurée($durée)
+    public function setTemps($temps)
     {
-        $this->durée = $durée;
+        $this->temps = $temps;
 
         return $this;
     }
 
     /**
-     * Get durée
+     * Get temps
      *
      * @return int
      */
-    public function getDurée()
+    public function getTemps()
     {
-        return $this->durée;
+        return $this->temps;
     }
 
     /**
@@ -104,7 +104,7 @@ class Niveau
     /**
      * Set rangeLevel
      *
-     * @param integer $rangeLevel
+     * @param string $rangeLevel
      *
      * @return Niveau
      */
@@ -118,34 +118,66 @@ class Niveau
     /**
      * Get rangeLevel
      *
-     * @return int
+     * @return string
      */
     public function getRangeLevel()
     {
         return $this->rangeLevel;
     }
 
+
     /**
-     *@ORM\ManyToOne(targetEntity="Questions")
-     * @ORM\JoinColumn(name="questions_id", referencedColumnName="id")
+     *@ORM\ManyToOne(targetEntity="Evaluation")
+     * @ORM\JoinColumn(name="NameEvaluation_id", referencedColumnName="id")
      */
 
-    private $question;
+    private $evaluation;
 
     /**
      * @return mixed
      */
-    public function getQuestion()
+    public function getEvaluation()
     {
-        return $this->question;
+        return $this->evaluation;
     }
 
     /**
-     * @param mixed $question
+     * @param mixed $evaluation
      */
-    public function setMembre($question)
+    public function setEvaluation($evaluation)
     {
-        $this->question = $question;
+        $this->evaluation = $evaluation;
     }
+
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateCreationNiveau", type="datetime")
+     */
+    protected $dateCreationNiveau;
+
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateCreationNiveau()
+    {
+        return $this->dateCreationNiveau;
+    }
+
+    /**
+     * @param \DateTime $dateCreationNiveau
+     * @return Niveau
+     */
+    public function setDateCreationNiveau(\DateTime $dateCreationNiveau)
+    {
+        $this->dateCreationNiveau = $dateCreationNiveau;
+        return $this;
+    }
+
+
+
+
 }
 

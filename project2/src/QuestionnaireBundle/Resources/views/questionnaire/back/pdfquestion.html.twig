@@ -1,0 +1,45 @@
+<center>
+    <h1 style="color: #0c5460">Liste des Niveaux </h1>
+<br>
+<br>
+<br>
+
+    <table class="table table-striped" id="sampleTable" border="1px" style="width:100%">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Catégorie</th>
+            <th>Nom du test</th>
+            <th>Niveau</th>
+            <th>Question</th>
+            <th>Reponse 1</th>
+            <th>Reponse 2</th>
+            <th>Reponse 3</th>
+            <th>Reponse 4</th>
+            <th>Reponse Correct</th>
+            <th>date du création</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            {% for question in questions %}
+        <tr>
+
+            <td>{{ question.id }}</td>
+            <td>{{ question.niveau.evaluation.categorieQuiz.libelle }}</td>
+            <td>{{ question.niveau.evaluation.libelle }}</td>
+            <td>{{ question.niveau.rangeLevel }}</td>
+            <td>{{ question.description }}</td>
+            <td>{{ question.correctReq }}</td>
+            <td>{{ question.rep1 }}</td>
+            <td>{{ question.rep2 }}</td>
+            <td>{{ question.rep3 }}</td>
+            <td>{{ question.rep4 }}</td>
+            <td>{{ question.dateCreationQuestion |date }}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</center>

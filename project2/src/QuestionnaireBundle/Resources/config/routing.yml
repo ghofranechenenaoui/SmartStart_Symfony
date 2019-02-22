@@ -1,7 +1,49 @@
+questionnaire_niveau:
+    resource: "@QuestionnaireBundle/Resources/config/routing/niveau.yml"
+    prefix:   /questionnaire_niveau
+
+questionnaire_question:
+    resource: "@QuestionnaireBundle/Resources/config/routing/questions.yml"
+    prefix:   /questionnaire_question
+
+questionnaire_categorie:
+    resource: "@QuestionnaireBundle/Resources/config/routing/categoriequiz.yml"
+    prefix:   /questionnaire_categorie
+
+evaluation_categorie:
+    resource: "@QuestionnaireBundle/Resources/config/routing/evaluation.yml"
+    prefix:   /evaluation_categorie
+
 questionnaire_homepage:
     path:     /test2
     defaults: { _controller: QuestionnaireBundle:Default:index }
 
-questionnaire:
-    path:     /questionnaire
+questionnaire1:
+    path:     /questionnaire1
     defaults: { _controller: QuestionnaireBundle:questionnaire:questionnaire }
+
+questionnaire2:
+    path:     /questionnaire2
+    defaults: { _controller: QuestionnaireBundle:questionnaire:questionnaire2 }
+
+questionnaire3:
+    path:     /questionnaire3
+    defaults: { _controller: QuestionnaireBundle:questionnaire:questionnaire3 }
+
+
+back1:
+    path:     /back1
+    defaults: { _controller: QuestionnaireBundle:Niveau:new }
+
+back2:
+    path:     /back2
+    defaults: { _controller: QuestionnaireBundle:Questions:new }
+back3:
+    path:     /back3
+    defaults: { _controller: QuestionnaireBundle:Evaluation:findpaye }
+
+
+contact:
+    path:     /contact
+    defaults: { _controller: QuestionnaireBundle:questionnaire:contact }
+

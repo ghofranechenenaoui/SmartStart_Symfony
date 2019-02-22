@@ -1,0 +1,51 @@
+
+{% block body %}
+    <h1>Question</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ question.id }}</td>
+            </tr>
+            <tr>
+                <th>Rep1</th>
+                <td>{{ question.rep1 }}</td>
+            </tr>
+            <tr>
+                <th>Rep2</th>
+                <td>{{ question.rep2 }}</td>
+            </tr>
+            <tr>
+                <th>Rep3</th>
+                <td>{{ question.rep3 }}</td>
+            </tr>
+            <tr>
+                <th>Rep4</th>
+                <td>{{ question.rep4 }}</td>
+            </tr>
+            <tr>
+                <th>Correctreq</th>
+                <td>{{ question.correctReq }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ question.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('questions_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('questions_edit', { 'id': question.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

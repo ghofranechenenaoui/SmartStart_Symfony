@@ -10,4 +10,17 @@ namespace QuestionnaireBundle\Repository;
  */
 class EvaluationRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function findpayeDQL(){
+        $query = $this ->getEntityManager()
+
+            -> createQuery("SELECT  m as n ,COUNT(m.id)as bcount   
+            FROM QuestionnaireBundle:Evaluation m
+                        
+                     GROUP BY m.libelle 
+             ");
+
+        return $query ->getResult();
+
+    }
 }

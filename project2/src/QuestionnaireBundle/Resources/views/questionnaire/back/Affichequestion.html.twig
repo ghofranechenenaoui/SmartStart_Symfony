@@ -1,0 +1,124 @@
+{% extends 'baseback.html.twig' %}
+
+{% block content4 %}
+
+
+    <main class="app-content">
+    <div class="app-title">
+        <div>
+            <h1><i class="fa fa-file-text-o"></i> Question </h1>
+            <p>A Printable Invoice Format</p>
+        </div>
+        <ul class="app-breadcrumb breadcrumb">
+            <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+        </ul>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tile">
+                <section class="invoice">
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <h2 class="page-header"><i class="fa fa-globe"></i> </h2>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-right">Date du création: {{ question.dateCreationQuestion |date }}</h5>
+                        </div>
+                    </div>
+                    <div class="row invoice-info">
+                        <div class="col-4">
+                            <b>Invoice #007612</b><br><br><b>
+                                Id:</b> {{ question.id }}
+                                <br><b>   Question :</b> {{ question.description }}<br>
+
+                    </div>
+                        <div class="row invoice-info">
+                        <div class="col-4"><br><br><br><br>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row invoice-info">
+
+                        <div class="col-4 text-right" style="right: -550px;">
+                            <a href="{{ path('questions_index') }}">Retour a la liste</a>
+
+                        </div>
+
+                    <div class="row">
+                        <div class="col-12 table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Id</th>
+                                    <th>Nom du test</th>
+                                    <th>Niveau</th>
+                                    <th>Question</th>
+                                    <th>Reponse 1</th>
+                                    <th>Reponse 2</th>
+                                    <th>Reponse 3</th>
+                                    <th>Reponse 4</th>
+                                    <th>Reponse Correct</th>
+                                    <th></th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>{{ question.id }}</td>
+                                    <td>{{ question.niveau.Evaluation.libelle }}</td>
+                                    <td>{{ question.niveau.rangeLevel }}</td>
+                                    <td>{{ question.description }}</td>
+                                    <td>{{ question.correctReq }}</td>
+                                    <td>{{ question.rep1 }}</td>
+                                    <td>{{ question.rep2 }}</td>
+                                    <td>{{ question.rep3 }}</td>
+                                    <td>{{ question.rep4 }}</td>
+                                    <td>
+                                     <b>   <a href="{{ path('questions_edit', { 'id': question.id }) }}">Modifier</a><br>
+                                     </b><b>    <a href="{{ path('questions_edit', { 'id': question.id }) }}">Modifier</a><br>
+                                        </b>
+                                    </td>
+
+                                </tr>
+
+                    </tbody>
+                    </table>
+
+
+                            <div class="row d-print-none mt-2">
+                                <div class="col-12 text-right"><a class="btn btn-primary" href="javascript:window.print();" target="_blank">
+                                        <i class="fa fa-print"></i> Print</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+    <ul>
+
+
+
+    </ul>
+
+
+
+
+
+
+
+
+
+{% endblock %}

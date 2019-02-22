@@ -1,0 +1,49 @@
+
+{% block body %}
+    <h1>Categoriequizzes list</h1>
+
+    <table>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Catégorie</th>
+                <th>Nom du test</th>
+                <th>Date de création</th>
+                <th>Nb des quizsd</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+
+                {% for categorieQuiz in categorieQuizzes %}
+            <tr>
+                <td><a href="{{ path('categoriequiz_show',
+                        { 'id': categorieQuiz.id }) }}">
+                        {{ categorieQuiz.id }}</a></td>
+                <td>{{ categorieQuiz.libelle }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('categoriequiz_show',
+                                { 'id': categorieQuiz.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('categoriequiz_edit',
+                                { 'id': categorieQuiz.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('categoriequiz_new') }}">Create a new categorieQuiz</a>
+        </li>
+    </ul>
+{% endblock %}

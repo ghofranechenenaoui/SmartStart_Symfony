@@ -25,6 +25,9 @@ class AppKernel extends Kernel
             new QuestionnaireBundle\QuestionnaireBundle(),
             new GestioProjetBundle\GestioProjetBundle(),
             new EventBundle\EventBundle(),
+            new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

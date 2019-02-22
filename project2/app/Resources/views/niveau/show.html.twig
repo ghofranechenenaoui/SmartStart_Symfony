@@ -1,0 +1,76 @@
+{% extends 'baseback.html.twig' %}
+{% block content %}
+
+<h1>Détail </h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ niveau.id }}</td>
+            </tr>
+
+
+
+            <tr>
+                <th>Nom du test</th>
+                <td>{{ niveau.evaluation.libelle }}</td>
+            </tr>
+
+
+
+            <tr>
+                <th>Niveau</th>
+                <td>{{ niveau.rangeLevel }}</td>
+            </tr>
+
+            <tr>
+                <th>Question</th>
+                <td>{{ niveau.questions.description }}</td>
+            </tr>
+
+            <tr>
+                <th>Reponse 1</th>
+                <td>{{ niveau.questions.rep1 }}</td>
+            </tr>
+
+            <tr>
+                <th>Reponse 2</th>
+                <td>{{ niveau.questions.rep2 }}</td>
+            </tr>
+
+            <tr>
+                <th>Reponse 3</th>
+                <td>{{ niveau.questions.rep3 }}</td>
+            </tr>
+
+            <tr>
+                <th>Reponse 4</th>
+                <td>{{ niveau.questions.rep4 }}</td>
+            </tr>
+
+            <tr>
+                <th>Reponse Correct</th>
+                <td>{{ niveau.questions.correctReq }}</td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('niveau_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('niveau_edit', { 'id': niveau.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+
+{% endblock %}

@@ -79,7 +79,7 @@ class Questions
      *
      * @param string $rep1
      *
-     * @return Question
+     * @return Questions
      */
     public function setRep1($rep1)
     {
@@ -103,7 +103,7 @@ class Questions
      *
      * @param string $rep2
      *
-     * @return Question
+     * @return Questions
      */
     public function setRep2($rep2)
     {
@@ -127,7 +127,7 @@ class Questions
      *
      * @param string $rep3
      *
-     * @return Question
+     * @return Questions
      */
     public function setRep3($rep3)
     {
@@ -151,7 +151,7 @@ class Questions
      *
      * @param string $rep4
      *
-     * @return Question
+     * @return Questions
      */
     public function setRep4($rep4)
     {
@@ -175,7 +175,7 @@ class Questions
      *
      * @param string $correctReq
      *
-     * @return Question
+     * @return Questions
      */
     public function setCorrectReq($correctReq)
     {
@@ -199,7 +199,7 @@ class Questions
      *
      * @param string $description
      *
-     * @return Question
+     * @return Questions
      */
     public function setDescription($description)
     {
@@ -217,5 +217,123 @@ class Questions
     {
         return $this->description;
     }
+
+
+    /**
+     *@ORM\ManyToOne(targetEntity="Niveau")
+     * @ORM\JoinColumn(name="Niveau_id", referencedColumnName="id")
+     */
+
+    private $niveau;
+
+    /**
+     * @return mixed
+     */
+    public function getNiveau()
+    {
+        return $this->niveau;
+    }
+
+    /**
+     * @param mixed $niveau
+     */
+    public function setNiveau($niveau)
+    {
+        $this->niveau = $niveau;
+    }
+
+    /**
+     *@ORM\ManyToOne(targetEntity="CategorieQuiz")
+     * @ORM\JoinColumn(name="CategorieQuiz_id", referencedColumnName="id")
+     */
+
+    private $categorieQuiz;
+
+    /**
+     * @return mixed
+     */
+    public function getCategorieQuiz()
+    {
+        return $this->categorieQuiz;
+    }
+
+    /**
+     * @param mixed $categorieQuiz
+     */
+    public function setCategorieQuiz($categorieQuiz)
+    {
+        $this->categorieQuiz = $categorieQuiz;
+    }
+
+
+    /**
+     *@ORM\ManyToOne(targetEntity="Evaluation")
+     * @ORM\JoinColumn(name="NameEvaluation_id", referencedColumnName="id")
+     */
+
+    private $evaluation;
+
+    /**
+     * @return mixed
+     */
+    public function getEvaluation()
+    {
+        return $this->evaluation;
+    }
+
+    /**
+     * @param mixed $evaluation
+     */
+    public function setEvaluation($evaluation)
+    {
+        $this->evaluation = $evaluation;
+    }
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateCreationQuestion", type="datetime")
+     */
+    protected $dateCreationQuestion;
+
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateCreationQuestion()
+    {
+        return $this->dateCreationQuestion;
+    }
+
+    /**
+     * @param \DateTime $dateCreationQuestion
+     * @return Questions
+     */
+    public function setDateCreationQuestion(\DateTime $dateCreationQuestion)
+    {
+        $this->dateCreationQuestion = $dateCreationQuestion;
+        return $this;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 

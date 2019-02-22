@@ -1,0 +1,268 @@
+
+{% extends 'baseback.html.twig' %}
+{% block content2 %}
+
+
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */-
+            position: fixed; /* Stay in place */
+            z-index: 90; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 300px;
+            top: 20;
+            width: 60%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color:  #e6b800; /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+
+        @keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            padding: 2px 16px;
+            background-color:  #e6f2ff;
+            color: white;
+        }
+
+        .modal-body {padding: 2px 16px;}
+
+        .modal-footer {
+            padding: 2px 16px;
+            background-color:  #e6f2ff;
+            color: white;
+
+        #chartdiv {
+            width		: 100%;
+            height		: 500px;
+            font-size	: 11px;
+        }
+
+        }
+    </style>
+
+
+
+    <main class="app-content">
+        <div class="app-title">
+            <div>
+                <h1><i class="fa fa-th-list"></i> Consulter les Niveaux</h1>
+            </div>
+
+            <ul class="app-breadcrumb breadcrumb">
+                <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+                <li class="breadcrumb-item"><a href="#">Home</a>
+
+            </ul>
+        </div>
+        <div class="col-md-12">
+         <div class="tile">
+         <div class="col-12 text-right" >
+         <button class="btn btn-success  icon-btn "
+                href="#" id="myBtn">
+            Ajouter Niveau
+         </button>
+                </div>
+
+
+        <br>
+                <br>
+                <!--  start table !-->
+                <div class="table-responsive"  style=" overflow: hidden;" >
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Id</th>
+                            <th>Nom du test</th>
+                            <th>Niveau</th>
+                            <th>Durée</th>
+                            <th>Min Score</th>
+                        </tr>
+                        </thead>
+
+                   <tbody>
+
+                        {% for niveau in niveaus %}
+                            <tr>
+                                <td>
+
+                                <a  class="btn btn-danger"
+                                href="{{ path('niveau_delete2', { 'id': niveau.id }) }}"
+                                >
+                                <i class="fa fa-lg fa-trash"></i></a>
+                               {{ render(controller("QuestionnaireBundle:Niveau:edit", { 'id': niveau.id })) }}
+            </td>
+
+                                <td>
+                                        <a href="{{ path('niveau_show', { 'id': niveau.id }) }}">
+                                            {{ niveau.id }}
+                                        </a>
+                                </td>
+                                <td>{{ niveau.evaluation.libelle }}</td>
+                                <td>{{ niveau.rangeLevel }}</td>
+                                <td>{{ niveau.temps }}</td>
+                                <td>{{ niveau.score }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="row d-print-none mt-2">
+                        <div class="col-12 text-right"><a class="btn btn-primary"  target="_blank"
+                            href="{{ path('niveau_imprimer') }}"
+                            >
+                                <i class="fa fa-eye"></i> Aperçu</a>
+                        </div>
+                    </div>
+
+                    <div class="bs-component" align="center">
+
+                        <div class="pagination">
+                            {{ knp_pagination_render(pagination) }}
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div>
+
+                    <!-- The Modal ajouter-->
+                    <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                            </div>
+
+                            <div class="modal-body" id="modal-input">
+                                <h4>Ajouter un Niveau</h4>
+
+                                <table>
+                                    <tr><td> {{ form_start(form) }}</td></tr>
+                                    <tr>
+                                        <td>Niveau</td>
+                                        <td>   {{ form_widget(form.rangeLevel) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Min du score accepté</td>
+                                        <td>   {{ form_widget(form.score) }}</td></tr>
+
+                                    <tr>
+                                        <td>Durée</td>
+                                        <td>   {{ form_widget(form.temps) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nom du test</td>
+                                        <td>   {{ form_widget(form.evaluation) }}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="tile-footer">
+                                        <td>
+                                            {{ form_row(form.submit,{'attr':{'class':'btn btn-primary'}}) }}
+                                        </td>
+
+                            </div>
+
+                            {{ form_end(form) }}
+                            </td></tr>
+
+                            </table>
+
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </main>
+
+    <script>
+        // Get the modal
+        var modal2 = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+{% endblock %}

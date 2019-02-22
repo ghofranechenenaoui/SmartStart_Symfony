@@ -62,27 +62,41 @@ class CategorieQuiz
     {
         return $this->libelle;
     }
-    /**
-     *@ORM\ManyToOne(targetEntity="Evaluation")
-     * @ORM\JoinColumn(name="evaluation_id", referencedColumnName="id")
-     */
 
-    private $evaluation;
+
+
 
     /**
-     * @return mixed
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateCreationCat", type="datetime")
      */
-    public function getEvaluation()
+    protected $dateCreationCat;
+
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateCreationCat()
     {
-        return $this->evaluation;
+        return $this->dateCreationCat;
     }
 
     /**
-     * @param mixed $evaluation
+     * @param \DateTime $dateCreationCat
+     * @return CategorieQuiz
      */
-    public function setEvaluation($evaluation)
+    public function setDateCreationCat(\DateTime $dateCreationCat)
     {
-        $this->evaluation = $evaluation;
+        $this->dateCreationCat = $dateCreationCat;
+        return $this;
     }
+
+
+
+
+
+
+
 }
 

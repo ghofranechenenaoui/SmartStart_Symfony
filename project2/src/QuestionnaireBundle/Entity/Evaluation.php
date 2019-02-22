@@ -63,27 +63,63 @@ class Evaluation
         return $this->libelle;
     }
 
+
+
+
+
+
     /**
-     *@ORM\ManyToOne(targetEntity="Niveau")
-     * @ORM\JoinColumn(name="niveau_id", referencedColumnName="id")
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateCreationEva", type="datetime")
+     */
+    protected $dateCreationEva;
+
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateCreationEva()
+    {
+        return $this->dateCreationEva;
+    }
+
+    /**
+     * @param \DateTime $dateCreationEva
+     * @return Evaluation
+     */
+    public function setDateCreationEva(\DateTime $dateCreationEva)
+    {
+        $this->dateCreationEva = $dateCreationEva;
+        return $this;
+    }
+
+
+
+    /**
+     *@ORM\ManyToOne(targetEntity="CategorieQuiz")
+     * @ORM\JoinColumn(name="Categorie_id", referencedColumnName="id")
      */
 
-    private $niveau;
+    private $CategorieQuiz;
 
     /**
      * @return mixed
      */
-    public function getNiveau()
+    public function getCategorieQuiz()
     {
-        return $this->niveau;
+        return $this->CategorieQuiz;
     }
 
     /**
-     * @param mixed $niveau
+     * @param mixed $CategorieQuiz
      */
-    public function setNiveau($niveau)
+    public function setCategorieQuiz($CategorieQuiz)
     {
-        $this->niveau = $niveau;
+        $this->CategorieQuiz = $CategorieQuiz;
     }
+
+
+
 }
 

@@ -1,0 +1,29 @@
+categoriequiz_index:
+    path:     /index
+    defaults: { _controller: "QuestionnaireBundle:CategorieQuiz:index" }
+    methods:  GET
+
+categoriequiz_show:
+    path:     /{id}/show
+    defaults: { _controller: "QuestionnaireBundle:CategorieQuiz:show" }
+    methods:  GET
+
+categoriequiz_new:
+    path:     /new
+    defaults: { _controller: "QuestionnaireBundle:CategorieQuiz:new" }
+    methods:  [GET, POST]
+
+categoriequiz_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "QuestionnaireBundle:CategorieQuiz:edit" }
+    methods:  [GET, POST]
+
+categoriequiz_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "QuestionnaireBundle:CategorieQuiz:delete" }
+    methods:  DELETE
+
+categoriequiz_findpaye2:
+    path:     /findpaye2
+    defaults: { _controller: "QuestionnaireBundle:CategorieQuiz:findpaye2" }
+    methods:  [GET, POST]

@@ -1,0 +1,33 @@
+<center>
+<h1 style="color: #0c5460">Liste des Niveaux </h1>
+<br>
+<br>
+<br>
+
+<table class="table" border="1px" style="width:100%">
+    <thead>
+    <tr>
+        <th colspan="3">Id</th>
+        <th colspan="2">Type du test</th>
+        <th colspan="2"> Niveau</th>
+        <th colspan="2">Durée</th>
+        <th colspan="2">Min Score</th>
+        <th colspan="2">Date du création</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    {% for niveau in niveaus %}
+        <tr>
+            <td colspan="3">{{ niveau.id }}</td>
+           <td colspan="2">{{ niveau.evaluation.libelle }}</td>
+            <td colspan="2">{{ niveau.rangeLevel }}</td>
+            <td colspan="2">{{ niveau.temps }}</td>
+            <td colspan="2">{{ niveau.score }}</td>
+            <td colspan="2">{{ niveau.dateCreationNiveau |date }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</center>

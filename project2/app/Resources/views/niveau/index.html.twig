@@ -1,0 +1,46 @@
+{% extends 'baseback.html.twig' %}
+
+{% block content %}
+    <h1>Affecté un test a un Niveau</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Id</th>
+                <th>Nom du test</th>
+                <th>Niveau</th>
+                <th>Question</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        {% for niveau in niveaus %}
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('niveau_delete2', { 'id': niveau.id }) }}">Supprimer</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('niveau_edit', { 'id': niveau.id }) }}">Modifier</a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <li>
+                        <a href="{{ path('niveau_show', { 'id': niveau.id }) }}">
+                            {{ niveau.evaluation.id }}
+                        </a>
+                    </li>
+                </td>
+                <td>{{ niveau.evaluation.libelle }}</td>
+                <td>{{ niveau.rangeLevel }}</td>
+                <td>{{ niveau.questions.description }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

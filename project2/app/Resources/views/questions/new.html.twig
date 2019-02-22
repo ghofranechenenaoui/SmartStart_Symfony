@@ -1,0 +1,23 @@
+
+{% block body %}
+    <h1>Question creation</h1>
+
+    {{ form_start(form) }}
+
+        {{ form_widget(form.Niveau) }}
+        {{ form_widget(form.Evaluation) }}
+        {{ form_widget(form.rep1) }}
+        {{ form_widget(form.rep2) }}
+        {{ form_widget(form.rep3) }}
+        {{ form_widget(form.rep4) }}
+
+
+
+    <input type="submit" value="Create" />
+    {{ form_end(form) }}
+    <ul>
+        <li>
+            <a href="{{ path('questions_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}

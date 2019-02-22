@@ -1,7 +1,261 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a15a3708-ec05-4e8d-be0b-6acdf69b56ed" name="Default Changelist" comment="" />
+    <list default="true" id="a15a3708-ec05-4e8d-be0b-6acdf69b56ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/baseback.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/categoriequiz/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/categoriequiz/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/categoriequiz/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/categoriequiz/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/evaluation/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/evaluation/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/evaluation/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/evaluation/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/niveau/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/niveau/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/niveau/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/niveau/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/questions/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/questions/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/questions/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/questions/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/CategorieQuizController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/EvaluationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/NiveauController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/QuestionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/ContactQuiz.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Form/CategorieQuizType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Form/ContactQuizType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Form/EvaluationType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Form/NiveauType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Form/QuestionsType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Repository/ContactQuizRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/categoriequiz.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/evaluation.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/niveau.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/questions.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AddQuestion.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AfficheD.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AfficheDCathEva.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/Affichequestion.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AjoutCat.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/ModNiveauxquiz.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/ModQuestion.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/ModifierNiveau.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/Niveauxquiz.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/NiveauxquizOR.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/catAndEvaluation.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/pagination.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/pdf.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/pdfquestion.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/questionAll.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/test.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/testtttt.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/front/quiz1Correct.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Tests/Controller/CategorieQuizControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Tests/Controller/EvaluationControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Tests/Controller/NiveauControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Tests/Controller/QuestionsControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/css/styleee.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/indexxx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/bootstrap-notify.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/jquery-ui.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/jquery.vmap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/jquery.vmap.sampledata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/jquery.vmap.world.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/pace.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/plugins/sweetalert.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/assets/scss/styleee.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/node-dev-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/blank-page.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/bootstrap-components.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/charts.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/form-components.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/form-custom.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/form-notifications.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/form-samples.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/includes/_head.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/includes/_header.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/includes/_javascript.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/includes/_sidebar.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/index.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/layouts/_layout.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/page-calendar.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/page-error.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/page-invoice.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/page-lockscreen.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/page-login.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/page-mailbox.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/page-user.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/table-basic.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/table-data-table.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/ui-cards.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/pug/widgets.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_bootstrap-datepicker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_customize-bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_dataTables.bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_fullcalendar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_jqvmap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_notify.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_pace.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_select2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_sweetalert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/1-tools/bootstrap-source/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/2-basics/_app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/2-basics/_helpers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_app-title.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_button-spinner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_chat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_custom-radio-n-checkbox.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_material-half-bg.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_material-loader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_rtl.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_sidebar-mini.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_tile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_toggle-button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/3-component/_widgets.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/4-pages/_error-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/4-pages/_lockscreen-material.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/4-pages/_login-material.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/4-pages/_mailbox.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/4-pages/_user-profile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/src/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_24_01_19_17_30_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_19_02_19_07_47_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_24_01_19_16_23_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_15_02_19_11_45_s.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/baseaymen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/baseaymen.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/quiz1.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/front/quiz1.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/quiz2.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/front/quiz2.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/quiz3.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/front/quiz3.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config_dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/questionnaireController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/questionnaireController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/CategorieQuiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/CategorieQuiz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Evaluation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Evaluation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Niveau.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Niveau.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Passage_questionnaire.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Passage_questionnaire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Questions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Repository/CategorieQuizRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Repository/CategorieQuizRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Repository/EvaluationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Repository/EvaluationRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/Default/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/Default/questionnaire.html.twig" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +265,20 @@
   <component name="ComposerSettings" doNotAsk="true" executionDataType="PHAR" phpInterpreterId="4301e3b4-fb16-470b-a8ad-7a0b26c30756" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1523251429">
@@ -137,80 +405,126 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-787314122">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.103" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.167" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.48" value="2" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.66" value="1" />
+          <entry key="project.open.time.72" value="1" />
+          <entry key="project.open.time.84" value="1" />
+          <entry key="project.open.time.89" value="1" />
+          <entry key="project.opened" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="json" value="4" />
+          <entry key="php" value="2679" />
+          <entry key="twig" value="5358" />
+          <entry key="txt" value="522" />
+          <entry key="yml" value="414" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="JSON" value="4" />
+          <entry key="PHP" value="2678" />
+          <entry key="PLAIN_TEXT" value="522" />
+          <entry key="Twig" value="5358" />
+          <entry key="YAML" value="414" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="LICENSE" value="1" />
+          <entry key="css" value="2" />
+          <entry key="dist" value="1" />
+          <entry key="json" value="2" />
+          <entry key="php" value="252" />
+          <entry key="pug" value="2" />
+          <entry key="rnc" value="1" />
+          <entry key="twig" value="312" />
+          <entry key="yml" value="158" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="2" />
+          <entry key="JSON" value="2" />
+          <entry key="PHP" value="252" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="RNG Compact" value="1" />
+          <entry key="Twig" value="312" />
+          <entry key="YAML" value="158" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="project" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/layout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-863">
-              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+        <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/catAndEvaluation.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="160">
+              <caret line="334" selection-start-line="334" selection-end-line="334" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Security/login.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/Niveauxquiz.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="452">
+              <caret line="216" column="55" selection-start-line="216" selection-end-line="217" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Security/login_content.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/evaluation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+            <state relative-caret-position="449">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+        <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="20" selection-start-line="12" selection-end-line="12" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Controller/EvaluationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+              <folding>
+                <element signature="e#50#95#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Repository/EvaluationRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" selection-start-column="4" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EventBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -221,62 +535,104 @@
     <findStrings>
       <find>fo</find>
       <find>vit</find>
+      <find>durée</find>
+      <find>vali</find>
+      <find>niveau</find>
+      <find>content</find>
     </findStrings>
+    <replaceStrings>
+      <replace>duree</replace>
+    </replaceStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:database:create" />
-      <command text="s generate:bundle" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s doctrine:database:create" />
       <command text="s doctrine:schema:update" />
       <command text="s doctrine:schema:update --force " />
-      <command text="s generate:bundle" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="c dump-autoload" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s generate:bundle" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="c dump-autoload" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="c dump-autoload" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="c dump-autoload" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="c dump-autoload" />
-      <command text="s doctrine:schema:update" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s generate:bundle" />
+      <command text="s doctrine:schema:update --force" />
       <command text="c dump-autoload" />
       <command text="c dump-autoload " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:schema:update --force " />
       <command text="c dump-autoload" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s generate:bundle" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="c dump-autoload" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="c dump-autoload" />
+      <command text="s doctrine:generate:entity QuestionnaireBundle:ContactQuiz" />
+      <command text="s doctrine:generate:form QuestionnaireBundle:Contact" />
+      <command text="s doctrine:generate:form QuestionnaireBundle:ContactQuiz" />
+      <command text="c dump-autoload" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="c dump-autoload" />
+      <command text="bin/phpunit" />
+      <command text="composer --dump-autoload" />
+      <command text="c dump-autoload" />
+      <command text="composer require helios-ag/fm-bbcode-bundle:~6 " />
     </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/categoriequiz.yml" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Repository/CategorieQuizRepository.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Repository/EvaluationRepository.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/categoriequiz/new.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/categoriequiz/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/categoriequiz/edit.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/categoriequiz/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Evaluation.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/evaluation/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/CategorieQuiz.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/evaluation/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AjoutCat.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Form/contact.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/evaluation/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Niveau.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Entity/ContactQuiz.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Form/ContactQuizType.php" />
+        <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Member.php" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Entity/Member.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/UtilisateurBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/UtilisateurBundle/Entity/Utilisateur.php" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Entity/Utilisateur.php" />
-        <option value="$PROJECT_DIR$/src/UserBundle/UserBundle.php" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/front/quiz1.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/front/quiz1Correct.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/questionnaireController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/baseback.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/test.html.twig" />
+        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Registration/register_content.html.twig" />
-        <option value="$PROJECT_DIR$/web/front/assets/css/style12.css" />
-        <option value="$PROJECT_DIR$/src/VitrineBundle/Controller/vitrineController.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/EventBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Security/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Security/login_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Registration/register.html.twig" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/pagination.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/ModQuestion.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Form/NiveauType.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/testtttt.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/niveau.yml" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/pdf.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/ModNiveauxquiz.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/NiveauController.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/questions.yml" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AddQuestion.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/QuestionAll.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/pdfquestion.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/QuestionsController.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/Affichequestion.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AfficheD.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AfficheDCathEva.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/Niveauxquiz.html.twig" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/CategorieQuizController.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/evaluation.yml" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Controller/EvaluationController.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Form/CategorieQuizType.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Form/EvaluationType.php" />
+        <option value="$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/catAndEvaluation.html.twig" />
       </list>
     </option>
   </component>
@@ -285,6 +641,14 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/web/back/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -328,19 +692,44 @@
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/php-http/cache-plugin" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message" />
+      <path value="$PROJECT_DIR$/vendor/php-http/client-common" />
+      <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
+      <path value="$PROJECT_DIR$/vendor/php-http/logger-plugin" />
+      <path value="$PROJECT_DIR$/vendor/php-http/stopwatch-plugin" />
+      <path value="$PROJECT_DIR$/vendor/hwi/oauth-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" />
+      <path value="$PROJECT_DIR$/vendor/clue/stream-filter" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="879" />
-    <option name="width" value="487" />
-    <option name="height" value="728" />
+    <option name="x" value="-120" />
+    <option name="y" value="95" />
+    <option name="width" value="1382" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -381,27 +770,41 @@
               <item name="project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="EventBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="EventBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="EventBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="EventBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -409,14 +812,47 @@
               <item name="project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UserBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="routing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UserBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="questionnaire" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="questionnaire" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionnaireBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="questionnaire" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project2" type="b2602c69:ProjectViewProjectNode" />
@@ -426,57 +862,41 @@
             <path>
               <item name="project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="friendsofsymfony" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="friendsofsymfony" type="462c0819:PsiDirectoryNode" />
-              <item name="user-bundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="friendsofsymfony" type="462c0819:PsiDirectoryNode" />
-              <item name="user-bundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../smartstart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\project2\app\Resources" />
-      <recent name="C:\wamp64\www\project2\app\Resources\views" />
-      <recent name="C:\wamp64\www\project\web\front" />
-      <recent name="C:\wamp64\www\project\src\UserBundle\Resources" />
-      <recent name="C:\wamp64\www\project\src\UtilisateurBundle" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\wamp64\www\project2\project2\src\QuestionnaireBundle\Resources\views\questionnaire\front" />
+      <recent name="C:\wamp64\wamp64\www\project2\project2\web\back\assets" />
       <recent name="C:\wamp64\www\project2\app\Resources\FOSUserBundle" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\wamp64\www\project2\project2\src\QuestionnaireBundle\Resources\views\questionnaire\back" />
+      <recent name="C:\wamp64\wamp64\www\project2\project2\web" />
+      <recent name="C:\wamp64\wamp64\www\project2\project2\src\QuestionnaireBundle\Resources\views\questionnaire\front" />
+      <recent name="C:\wamp64\wamp64\www\project2\project2\src\QuestionnaireBundle\Form" />
+      <recent name="C:\wamp64\wamp64\www\project2\project2\web\back\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -515,11 +935,22 @@
       <workItem from="1550093060990" duration="1444000" />
       <workItem from="1550124859793" duration="639000" />
       <workItem from="1550154612778" duration="497000" />
+      <workItem from="1550226862153" duration="48105000" />
+      <workItem from="1550315028052" duration="7716000" />
+      <workItem from="1550323885199" duration="16905000" />
+      <workItem from="1550345813944" duration="29841000" />
+      <workItem from="1550411958362" duration="5591000" />
+      <workItem from="1550440887463" duration="39749000" />
+      <workItem from="1550556286582" duration="6251000" />
+      <workItem from="1550605196967" duration="8664000" />
+      <workItem from="1550645249619" duration="26458000" />
+      <workItem from="1550694255569" duration="14185000" />
+      <workItem from="1550748495309" duration="30668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62643000" />
+    <option name="totallyTimeSpent" value="296776000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -531,13 +962,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1300" height="784" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5021739" side_tool="true" weight="0.25396827" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4978261" visible="true" weight="0.24920635" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4978261" visible="true" weight="0.23709677" />
       <window_info id="Structure" order="2" sideWeight="0.5033557" side_tool="true" weight="0.25396827" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="0" sideWeight="0.4984127" visible="true" weight="0.13846155" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="0" sideWeight="0.4984127" visible="true" weight="0.29076922" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.24307692" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50158733" side_tool="true" weight="0.06307692" />
@@ -550,11 +980,35 @@
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.3276923" />
-      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Database" order="0" weight="0.32983872" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" sideWeight="0.5021739" side_tool="true" weight="0.25396827" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4978261" visible="true" weight="0.23709677" />
+      <window_info id="Structure" order="2" sideWeight="0.5033557" side_tool="true" weight="0.25396827" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="0" sideWeight="0.4984127" visible="true" weight="0.29076922" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.24307692" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50158733" side_tool="true" weight="0.06307692" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3276923" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.3276923" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Database" order="0" weight="0.32983872" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -562,229 +1016,387 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/QuestionnaireBundle/Controller/questionnaireController.php</url>
+          <line>81</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/front/assets/js/vendor/wow.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Group/list_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Group/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../projet/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PortfolioBundle/Entity/Membre.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="342" column="5" lean-forward="true" selection-start-line="342" selection-start-column="5" selection-end-line="342" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/front/assets/css/style12.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+        <state relative-caret-position="311">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PortfolioBundle/Resources/views/portfolio/portfolio.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/portfolio.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PortfolioBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Form/ContactQuizType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="51">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventBundle/EventBundle.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventBundle/Resources/views/event/event.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/baseaymen.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventBundle/Resources/views/Default/event.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PortfolioBundle/Controller/ContactController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PortfolioBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PortfolioBundle/Controller/portfolioController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VitrineBundle/Resources/views/vitrine/vitrine.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VitrineBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VitrineBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="133" column="61" selection-start-line="133" selection-start-column="54" selection-end-line="133" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VitrineBundle/Controller/vitrineController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Registration/register_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/basesansfooter.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Security/login_content.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Security/login.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin_base.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Registration/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="425">
+          <caret line="134" column="74" selection-start-line="134" selection-start-column="39" selection-end-line="134" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/categoriequiz.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Repository/CategorieQuizRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Evaluation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="99" column="48" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/baseback.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Controller/questionnaireController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/front/quiz1Correct.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="228" column="103" selection-start-line="228" selection-start-column="56" selection-end-line="228" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/tables.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="118" column="16" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Entity/CategorieQuiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/AstinaSocialLinksBundle.php" />
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/test.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="27" column="55" selection-start-line="27" selection-end-line="28" />
+          <folding>
+            <element signature="e#7#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/testtttt.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="116" selection-start-line="109" selection-start-column="11" selection-end-line="116" />
+          <folding>
+            <element signature="e#494#501#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/niveau.yml">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="5" selection-start-column="4" selection-end-column="5" />
+          <caret column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Niveau.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="277">
+          <caret line="155" column="25" lean-forward="true" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventBundle/Controller/eventController.php">
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/ModifierNiveau.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="209">
+          <caret line="125" column="20" selection-start-line="101" selection-start-column="11" selection-end-line="125" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Security/login_content.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/ModNiveauxquiz.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        <state relative-caret-position="238">
+          <caret line="134" selection-start-line="102" selection-start-column="9" selection-end-line="134" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Security/login.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/front/quiz1.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="246">
+          <caret line="236" column="37" selection-start-line="236" selection-start-column="37" selection-end-line="236" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/pagination.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-863">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        <state relative-caret-position="350">
+          <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/NiveauxquizOR.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="35" />
+        <state relative-caret-position="-299">
+          <caret line="86" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/pdf.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#center#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/pdfquestion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#center#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#center#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/QuestionAll.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="135" column="69" selection-start-line="135" selection-start-column="69" selection-end-line="135" selection-end-column="69" />
+          <folding>
+            <element signature="e#6915#6934#0#HTML" expanded="true" />
+            <element signature="e#7339#7358#0#HTML" expanded="true" />
+            <element signature="e#7767#7786#0#HTML" expanded="true" />
+            <element signature="e#8202#8221#0#HTML" expanded="true" />
+            <element signature="e#8630#8649#0#HTML" expanded="true" />
+            <element signature="e#9015#9034#0#HTML" expanded="true" />
+            <element signature="e#9408#9427#0#HTML" expanded="true" />
+            <element signature="e#9735#9754#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/ModQuestion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Controller/NiveauController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="118" column="30" selection-start-line="118" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Entity/Questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="313" column="15" selection-start-line="313" selection-start-column="15" selection-end-line="313" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/Affichequestion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AfficheD.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#1392#1414#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/questions.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="16" column="14" selection-start-line="16" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Controller/QuestionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AfficheDCathEva.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Controller/CategorieQuizController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Repository/EvaluationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" selection-start-line="12" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/config/routing/evaluation.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Controller/EvaluationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding>
+            <element signature="e#50#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AddQuestion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="103" column="34" selection-start-line="19" selection-start-column="31" selection-end-line="103" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/AjoutCat.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="857">
+          <caret line="61" column="28" selection-start-line="18" selection-start-column="20" selection-end-line="61" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/Niveauxquiz.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="216" column="55" selection-start-line="216" selection-end-line="217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Form/NiveauType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Form/EvaluationType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Form/CategorieQuizType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionnaireBundle/Resources/views/questionnaire/back/catAndEvaluation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="334" selection-start-line="334" selection-end-line="334" />
         </state>
       </provider>
     </entry>

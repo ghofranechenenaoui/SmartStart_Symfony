@@ -81,5 +81,39 @@ class Passage_questionnaire
     }
 
 
+
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateCreationPas", type="datetime")
+     */
+    protected $dateCreationPas;
+
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateCreationPas()
+    {
+        return $this->dateCreationPas;
+    }
+
+    /**
+     * @param \DateTime $dateCreationPas
+     * @return Passage_questionnaire
+     */
+    public function setDateCreationNiveau(\DateTime $dateCreationPas)
+    {
+        $this->dateCreationPas = $dateCreationPas;
+        return $this;
+    }
+
+
+
+
+
+
+
 }
 
