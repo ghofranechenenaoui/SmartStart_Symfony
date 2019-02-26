@@ -4,3 +4,9 @@ forum_homepage:
 forum:
     path:     /forum
     defaults: { _controller: ForumBundle:forum:forum }
+forum-topics:
+    path:     /forum/{id}/topics
+    defaults: { _controller: ForumBundle:forum:displaytopics}
+my-topics:
+    path:     /forum/topics
+    defaults: { _controller: ForumBundle:Topic:displayUserTopics}

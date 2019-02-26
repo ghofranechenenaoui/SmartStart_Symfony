@@ -26,20 +26,31 @@
             <div class="row">
                 <div class="col-lg-8 tri">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="#">FORUMS</a>
+                        <a class="navbar-brand" href="#">MY TOPICS</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">ALL FORUMS<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#">Topics <span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="{{ path('my-topics') }}">MY TOPICS</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">MOST RECENT</a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">FAV'S</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        TOP VOTED
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">DAY</a>
+                                        <a class="dropdown-item" href="#">WEEK</a>
+                                        <a class="dropdown-item" href="#">MONTH</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item float-right" >
+                                    <a class="nav-link" href="User-add-topic.html">ADD TOPIC</a>
                                 </li>
                             </ul>
                         </div>
@@ -48,47 +59,78 @@
             </div>
 
             <div class="row">
-
                 <div class="col-lg-8 post-list blog-post-list">
 
-                    {% for category in categories %}
+                    <div class="single-post">
 
-                            <h4> {{ category.categoryName }} </h4>
-                            <div class="card-deck">
-                                {% for forum in forums %}
-                                    {% if forum.category==category %}
-                                <a href="{{ path('forum-topics', { 'id': forum.id }) }}">
+                        <div class="media">
 
+                            <div class="container">
+                                <div class="flex1">
+                                    <ul class="tags">
+                                        <li><a href="#">Art, </a></li>
+                                        <li><a href="#">Technology, </a></li>
+                                        <li><a href="#">Fashion</a></li>
+                                    </ul>
+                                    <a href="User-topic-details.html"><h4 class="media-heading bli">Aidez moi SVP</h4></a>
+                                    <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training...</p>
+                                </div>
+                                <div class="flex2">
+                                    <div class="user-details row align-items-center">
+                                        <div class="comment-wrap col-lg-6 ">
 
-                                <div class="card bg-light">
-                                            <img class="card-img-top" src="..." alt="Card image cap">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">{{ forum.forumName }}</h5>
-                                                <p class="card-text">{{ forum.forumDescription }}</p>
+                                            <div class="top">
+                                                <i class="fas fa-angle-up"></i>
+                                                <!--<img class="rym-logo" src="assets/images/rym-icon/up-arrow.png" alt="">-->
+                                                <a href="#"><span class="lnr lnr-heart"></span>	04 </a>
                                             </div>
-                                            <div class="card-footer">
-                                                <small class="text-muted"> on verra Last updated 3 mins ago</small>
+                                            <div class="middle">
+                                                <i class="far fa-comments"></i>
+                                                <a href="#"><span class="lnr lnr-bubble"></span> 06 </a>
+                                            </div>
+                                            <div class="bottom">
+                                                <i class="far fa-eye"></i>
+                                                <a href="#"><span class="lnr lnr-bubble"></span> 20 </a>
                                             </div>
                                         </div>
-                                </a>
-                                    {%  endif %}
-                                {% endfor %}
+                                    </div>
+                                </div>
                             </div>
-
-                    {% endfor %}
+                        </div>
+                    </div>
                 </div>
 
 
-
-
                 <div class="col-lg-4 sidebar">
+                    <div class="single-widget search-widget">
+                        <form class="example" action="#" style="margin:auto;max-width:300px">
+                            <input type="text" placeholder="Search Topics" name="search2" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Topics'" required>
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+
+
+
+                    <div class="single-widget category-widget">
+                        <h4 class="title">Forum Categories</h4>
+                        <ul>
+                            <li><a href="#" class="justify-content-between align-items-center d-flex"><h6>Site Web</h6> <span>37</span></a></li>
+                            <li><a href="#" class="justify-content-between align-items-center d-flex"><h6>Art</h6> <span>24</span></a></li>
+                            <li><a href="#" class="justify-content-between align-items-center d-flex"><h6>Entreprise</h6> <span>59</span></a></li>
+                            <li><a href="#" class="justify-content-between align-items-center d-flex"><h6>Programmation</h6> <span>29</span></a></li>
+                            <li><a href="#" class="justify-content-between align-items-center d-flex"><h6>Techlology</h6> <span>15</span></a></li>
+                            <li><a href="#" class="justify-content-between align-items-center d-flex"><h6>Design</h6> <span>09</span></a></li>
+                            <li><a href="#" class="justify-content-between align-items-center d-flex"><h6>Matériel & logiciels</h6> <span>44</span></a></li>
+                            <li><a href="#" class="justify-content-between align-items-center d-flex"><h6>Communauté des SmartStarteur</h6> <span>44</span></a></li>
+                        </ul>
+                    </div>
 
                     <div class="single-widget recent-posts-widget">
                         <h4 class="title">Recent Topics</h4>
                         <div class="blog-list ">
                             <div class="single-recent-post d-flex flex-row">
                                 <div class="recent-thumb">
-                                    <img class="img-fluid" src="{{ asset('front/assets/images/r1.jpg') }}" alt="">
+                                    <img class="img-fluid" src="assets/images/r1.jpg" alt="">
                                 </div>
                                 <div class="recent-details">
                                     <a href="blog-single.html">
@@ -103,7 +145,7 @@
                             </div>
                             <div class="single-recent-post d-flex flex-row">
                                 <div class="recent-thumb">
-                                    <img class="img-fluid" src="{{ asset('front/assets/images/r2.jpg')}}" alt="">
+                                    <img class="img-fluid" src="assets/images/r2.jpg" alt="">
                                 </div>
                                 <div class="recent-details">
                                     <a href="blog-single.html">
@@ -118,7 +160,7 @@
                             </div>
                             <div class="single-recent-post d-flex flex-row">
                                 <div class="recent-thumb">
-                                    <img class="img-fluid" src="{{ asset('front/assets/images/r3.jpg')}}" alt="">
+                                    <img class="img-fluid" src="assets/images/r3.jpg" alt="">
                                 </div>
                                 <div class="recent-details">
                                     <a href="blog-single.html">
@@ -133,7 +175,7 @@
                             </div>
                             <div class="single-recent-post d-flex flex-row">
                                 <div class="recent-thumb">
-                                    <img class="img-fluid" src="{{ asset('front/assets/images/r4.jpg')}}" alt="">
+                                    <img class="img-fluid" src="assets/images/r4.jpg" alt="">
                                 </div>
                                 <div class="recent-details">
                                     <a href="blog-single.html">
@@ -176,9 +218,10 @@
                             <li><a href="#">Communauté des SmartStarteur</a></li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- End blog-posts Area -->
 {% endblock %}

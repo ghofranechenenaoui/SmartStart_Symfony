@@ -112,6 +112,12 @@ class Topic
     protected $labels;
 
     /**
+     * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User")
+     * @ORM\JoinColumn(nullable=true, referencedColumnName="id")
+     */
+    protected $user;
+
+    /**
      * Constructor
      */
     public function __construct()
@@ -457,5 +463,28 @@ class Topic
     {
         return $this->labels;
     }
+
+    /**
+     * Set user
+     *
+     * @param \UserBundle\Entity\User $user
+     * @return Topic
+     */
+    public function setUser($user)
+    {
+        $this->user    = $user;
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \UserBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
 }
 
